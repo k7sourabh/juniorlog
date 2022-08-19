@@ -1,0 +1,30 @@
+tmp/*
+build/*
+log/*
+cache/*
+coverage/*
+node_modules/*
+dist
+
+# Node / NPM
+npm-debug.log
+
+# OS-specific weirdness
+.DS_Store
+
+# Editor-specific
+/nbproject/*
+/.idea/*
+
+# Logs
+logs
+*.log
+firebase-debug.log*
+
+# Firebase cache
+.firebase/
+.angular/
+
+
+# sandbox folder
+.sandbox/
