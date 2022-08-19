@@ -9,37 +9,37 @@
             <div class="flex flex-wrap">
                 <div class="w-full">
                     <ul class="flex mb-0 list-none flex-wrap flex-row border-b px-5">
-                        <li class="text-center px-6">
+                        <li class="text-center px-4">
                             <a class="bg-white block font-semibold text-md pt-4 pb-2 px-2" (click)="toggleTabs(1)"
                                 [ngClass]="{'text-gray-600 bg-white': openTab !== 1, 'TabHighlight': openTab === 1}">
                                 Transaction List
                             </a>
                         </li>
-                        <li class="text-center px-6">
+                        <li class="text-center px-4">
                             <a class="bg-white block font-semibold text-md pt-4 pb-2 px-2" (click)="toggleTabs(2)"
                                 [ngClass]="{'text-gray-600 bg-white': openTab !== 2, 'TabHighlight': openTab === 2}">
                                 Invoices
                             </a>
                         </li>
-                        <li class="text-center px-6">
+                        <li class="text-center px-4">
                             <a class="bg-white block font-semibold text-md pt-4 pb-2 px-2" (click)="toggleTabs(3)"
                                 [ngClass]="{'text-gray-600 bg-white': openTab !== 3, 'TabHighlight': openTab === 3}">
                                 Payments
                             </a>
                         </li>
-                        <li class="text-center px-6">
+                        <li class="text-center px-4">
                             <a class="bg-white block font-semibold text-md pt-4 pb-2 px-2" (click)="toggleTabs(4)"
                                 [ngClass]="{'text-gray-600 bg-white': openTab !== 4, 'TabHighlight': openTab === 4}">
                                 Credit Notes
                             </a>
                         </li>
-                        <li class="text-center px-6">
+                        <li class="text-center px-4">
                             <a class="bg-white block font-semibold text-md pt-4 pb-2 px-2" (click)="toggleTabs(5)"
                                 [ngClass]="{'text-gray-600 bg-white': openTab !== 5, 'TabHighlight': openTab === 5}">
                                 Bond Payments
                             </a>
                         </li>
-                        <li class="text-center px-6">
+                        <li class="text-center px-4">
                             <a class="bg-white block font-semibold text-md pt-4 pb-2 px-2" (click)="toggleTabs(6)"
                                 [ngClass]="{'text-gray-600 bg-white': openTab !== 6, 'TabHighlight': openTab === 6}">
                                 Age Debtors
@@ -76,8 +76,8 @@
                                         <div class="bg-gray-100 p-4 relative round rounded-lg">
                                             <div class="flex flex-row gap-5">
                                                 <div class="basis-1/3 md:basis-1/3 sm:basis-1/12">
-                                                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900
-                                                        dark:text-gray-400">Child</label>
+                                                    <label for="countries"
+                                                        class="block font-medium mb-2 text-gray-900">Child</label>
                                                     <select id="countries" class="bg-white h-12 border border-gray-300 text-gray-900 text-md
                                                         rounded-lg focus:ring-blue-500 focus:border-blue-500 block
                                                         w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
@@ -91,11 +91,10 @@
                                                     </select>
                                                 </div>
                                                 <div class="basis-1/3 md:basis-1/3 sm:basis-1/12">
-                                                    <label for=" countries" class="block mb-2 text-sm font-medium text-gray-900
-                                                        dark:text-gray-400">Payee</label>
+                                                    <label for=" countries"
+                                                        class="block font-medium mb-2 text-gray-900">Payee</label>
                                                     <select id="countries" class="bg-white h-12 border border-gray-300 text-gray-900
-                                                        text-md
-                                                        rounded-lg focus:ring-blue-500 focus:border-blue-500 block
+                                                        text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block
                                                         w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
                                                         dark:placeholder-gray-400 dark:text-white
                                                         dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -115,8 +114,62 @@
                                                             credit</label>
                                                     </div>
                                                 </div>
-                                                <div class="basis-1/3 md:basis-1/3">04</div>
+                                                <div class="basis-1/3 md:basis-1/3">
+                                                    <div class="flex flex-row gap-5 pt-7 justify-between">
+                                                        <div>
+                                                            <button type="button" class="Custom-bg dark:bg-blue-600
+                                                                dark:focus:ring-blue-800 dark:hover:bg-blue-700
+                                                                focus:outline-none focus:ring-4 focus:ring-blue-300
+                                                                font-medium h-12 hover:bg-blue-800 px-8 py-2.5
+                                                                rounded-lg text-lg text-white">Search</button>
+
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="justify-center w-12 h-12 text-red-700 border border-red-700
+                                                                bg-red-700 hover:bg-red-700 hover:text-white
+                                                                focus:ring-4 focus:outline-none focus:ring-red-300
+                                                                font-medium rounded-full text-sm p-2.5 text-center
+                                                                inline-flex items-center dark:border-red-500
+                                                                dark:text-red-500 dark:hover:text-white
+                                                                dark:focus:ring-red-800">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M1 1V6H1.58152M16.9381 8C16.446 4.05369 13.0796 1 9 1C5.64262 1 2.76829 3.06817 1.58152 6M1.58152 6H6M17 17V12H16.4185M16.4185 12C15.2317 14.9318 12.3574 17 9 17C4.92038 17 1.55399 13.9463 1.06189 10M16.4185 12H12"
+                                                                        stroke="white" stroke-width="2"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="sr-only">Icon description</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div>
+                                                            <button type="button" class="justify-center w-12 h-12 text-gray-700 border border-gray-200
+                                                                bg-gray-200 hover:bg-gray-200 hover:text-white
+                                                                focus:ring-4 focus:outline-none focus:ring-gray-200
+                                                                font-medium rounded-full text-sm p-2.5 text-center
+                                                                inline-flex items-center dark:border-gray-500
+                                                                dark:text-gray-500 dark:hover:text-white
+                                                                dark:focus:ring-gray-800">
+                                                                <svg width="20" height="10" viewBox="0 0 19 9"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M15 1L8 8L1 1" stroke="#232323"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+
+                                                                <span class="sr-only">Icon description</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                        </div>
+                                        <div class="py-5">
+
                                         </div>
                                     </div>
 
@@ -126,11 +179,8 @@
                                                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                                 <tr>
                                                     <th scope="col" class="py-3 px-6">
-                                                        Product name
-                                                    </th>
-                                                    <th scope="col" class="py-3 px-6">
                                                         <div class="flex items-center">
-                                                            Color
+                                                            Payee
                                                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                                                                     class="ml-1 w-3 h-3" aria-hidden="true"
                                                                     fill="currentColor" viewBox="0 0 320 512">
@@ -142,7 +192,7 @@
                                                     </th>
                                                     <th scope="col" class="py-3 px-6">
                                                         <div class="flex items-center">
-                                                            Category
+                                                            Child
                                                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                                                                     class="ml-1 w-3 h-3" aria-hidden="true"
                                                                     fill="currentColor" viewBox="0 0 320 512">
@@ -154,7 +204,97 @@
                                                     </th>
                                                     <th scope="col" class="py-3 px-6">
                                                         <div class="flex items-center">
-                                                            Price
+                                                            3 Weeks
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            2 Weeks
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            1 Weeks
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            Current
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            Pending Amount
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            Over Payment
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            Pending Creditnote
+                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
+                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                                    <path
+                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
+                                                                    </path>
+                                                                </svg></a>
+                                                        </div>
+                                                    </th>
+
+                                                    <th scope="col" class="py-3 px-6">
+                                                        <div class="flex items-center">
+                                                            Total Pending Amount
                                                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                                                                     class="ml-1 w-3 h-3" aria-hidden="true"
                                                                     fill="currentColor" viewBox="0 0 320 512">
@@ -171,62 +311,107 @@
                                             </thead>
                                             <tbody>
                                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                                    <th scope="row"
+                                                    <td scope="row"
                                                         class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        Apple MacBook Pro 17"
-                                                    </th>
-                                                    <td class="py-4 px-6">
-                                                        Sliver
+                                                        John deo
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        Laptop
+                                                        Berlin
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        $2999
+                                                        $4098.25
                                                     </td>
-                                                    <td class="py-4 px-6 text-right">
-                                                        <a href="#"
-                                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
                                                     </td>
                                                 </tr>
+
                                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                                    <th scope="row"
+                                                    <td scope="row"
                                                         class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        Microsoft Surface Pro
-                                                    </th>
-                                                    <td class="py-4 px-6">
-                                                        White
+                                                        John deo
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        Laptop PC
+                                                        Berlin
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        $1999
+                                                        $4098.25
                                                     </td>
-                                                    <td class="py-4 px-6 text-right">
-                                                        <a href="#"
-                                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
                                                     </td>
                                                 </tr>
-                                                <tr class="bg-white dark:bg-gray-800">
-                                                    <th scope="row"
+
+                                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                                    <td scope="row"
                                                         class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        Magic Mouse 2
-                                                    </th>
-                                                    <td class="py-4 px-6">
-                                                        Black
+                                                        John deo
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        Accessories
+                                                        Berlin
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        $99
+                                                        $4098.25
                                                     </td>
-                                                    <td class="py-4 px-6 text-right">
-                                                        <a href="#"
-                                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
                                                     </td>
                                                 </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
