@@ -10,6 +10,13 @@ export class MainAccountComponent {
 
   constructor() { }
 
+  //define the toogle property
+  isShow = false;
+
+  toggleDisplay() {
+    this.isShow = !this.isShow;
+  }
+
   openTab = 6;
   toggleTabs($tabNumber: number) {
     this.openTab = $tabNumber;
