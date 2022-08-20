@@ -107,8 +107,9 @@
                                                 </div>
                                                 <div class="basis-1/3 md:basis-1/3">
                                                     <div class="flex items-start pt-7">
-                                                        <input id="default-checkbox" type="checkbox" value=""
-                                                            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                        <input
+                                                            class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                                                            type="checkbox" value="" id="flexCheckDefault3">
                                                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900
                                                             dark:text-gray-300">Include those parents who are in
                                                             credit</label>
@@ -169,7 +170,74 @@
                                             </div>
                                         </div>
                                         <div class="py-5">
+                                            <div class="flex items-center gap-5">
+                                                <div>
+                                                    <div class="form-check flex items-center gap-2">
+                                                        <input
+                                                            class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                                                            type="checkbox" value="" id="flexCheckDefault3">
+                                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.5 1.5L5 5L1.5 1.5" stroke="#111827"
+                                                                stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
 
+                                                <div class="flex items-center gap-3">
+                                                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold
+                                                        py-2 px-4 rounded inline-flex items-center gap-2">
+                                                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.702785 2.50102L7.49991 5.89958L14.2971 2.50098C14.2458 1.60818 13.5056 0.9 12.6 0.9H2.39995C1.49429 0.9 0.754041 1.6082 0.702785 2.50102Z"
+                                                                fill="#232323" />
+                                                            <path
+                                                                d="M14.3 4.40022L7.49991 7.80024L0.699951 4.40026V9.4C0.699951 10.3389 1.46107 11.1 2.39995 11.1H12.6C13.5388 11.1 14.3 10.3389 14.3 9.4V4.40022Z"
+                                                                fill="#232323" />
+                                                        </svg>
+                                                        <span>Email</span>
+                                                    </button>
+
+                                                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold
+                                                        py-2 px-4 rounded inline-flex items-center gap-2">
+                                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M11.2878 10.1614C11.4467 10.1614 11.5753 10.0307 11.5753 9.86933C11.5753 9.70799 11.4467 9.57725 11.2878 9.57725H3.69955C3.54067 9.57725 3.41211 9.70798 3.41211 9.86933C3.41211 10.0307 3.54066 10.1614 3.69955 10.1614H4.27201V14.2923C4.27201 14.4529 4.40128 14.5843 4.55945 14.5843H10.4257C10.5867 14.5843 10.7132 14.4529 10.7132 14.2923V10.1614H11.2878ZM9.19397 13.093H5.79297C5.63408 13.093 5.50553 12.9623 5.50553 12.801C5.50553 12.6396 5.63407 12.5089 5.79297 12.5089H9.19397C9.35285 12.5089 9.48141 12.6396 9.48141 12.801C9.48141 12.9622 9.35276 13.093 9.19397 13.093ZM9.19397 11.6531H5.79297C5.63408 11.6531 5.50553 11.5224 5.50553 11.3611C5.50553 11.1997 5.63407 11.069 5.79297 11.069H9.19397C9.35285 11.069 9.48141 11.1997 9.48141 11.3611C9.48141 11.5223 9.35276 11.6531 9.19397 11.6531Z"
+                                                                fill="#232323" />
+                                                            <path
+                                                                d="M13.162 4.69818H1.82601C1.19652 4.69818 0.687848 5.21513 0.687848 5.85469L0.687744 10.6416C0.687744 11.2812 1.19649 11.7981 1.8259 11.7981H3.69716V10.7452C3.22271 10.7439 2.83715 10.3516 2.83715 9.8692C2.83715 9.38604 3.22393 8.99299 3.69945 8.99299L11.2877 8.9931C11.7632 8.9931 12.15 9.38611 12.15 9.8693C12.15 10.3525 11.7632 10.7455 11.2877 10.7455V11.7982H13.1618C13.7884 11.7982 14.3 11.2812 14.3 10.6417L14.3001 5.8548C14.3001 5.21515 13.7885 4.6982 13.1619 4.6982L13.162 4.69818Z"
+                                                                fill="#232323" />
+                                                            <path
+                                                                d="M12.268 3.38994C12.268 2.91386 11.8829 2.52255 11.4144 2.52255H11.2878V4.11433H12.2681L12.268 3.38994Z"
+                                                                fill="#232323" />
+                                                            <path
+                                                                d="M3.6971 2.52241H3.57335C3.10202 2.52241 2.71973 2.91374 2.71973 3.3898V4.11419H3.69711L3.6971 2.52241Z"
+                                                                fill="#232323" />
+                                                            <path
+                                                                d="M10.7131 0.857753C10.7131 0.69419 10.5867 0.565676 10.4257 0.565676H4.55941C4.40136 0.565676 4.27197 0.694176 4.27197 0.857753V4.11427H10.7131V0.857753ZM9.19393 3.35096H5.79293C5.63405 3.35096 5.50549 3.22024 5.50549 3.05888C5.50549 2.89754 5.63404 2.76681 5.79293 2.76681H9.19393C9.35282 2.76681 9.48137 2.89753 9.48137 3.05888C9.48137 3.22022 9.35272 3.35096 9.19393 3.35096ZM9.19393 1.91108H5.79293C5.63405 1.91108 5.50549 1.78035 5.50549 1.619C5.50549 1.45766 5.63404 1.32692 5.79293 1.32692H9.19393C9.35282 1.32692 9.48137 1.45765 9.48137 1.619C9.48137 1.78034 9.35272 1.91108 9.19393 1.91108Z"
+                                                                fill="#232323" />
+                                                        </svg>
+                                                        <span>Print</span>
+                                                    </button>
+
+                                                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold
+                                                        py-2 px-4 rounded inline-flex items-center gap-2">
+                                                        <svg width="11" height="14" viewBox="0 0 11 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4.6499 0.200001C4.18046 0.200001 3.7999 0.580559 3.7999 1.05C3.7999 1.51944 4.18046 1.9 4.6499 1.9H6.3499C6.81934 1.9 7.1999 1.51944 7.1999 1.05C7.1999 0.580559 6.81934 0.200001 6.3499 0.200001H4.6499Z"
+                                                                fill="#111827" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M0.399902 2.75C0.399902 1.81112 1.16102 1.05 2.0999 1.05C2.0999 2.45833 3.24158 3.6 4.6499 3.6H6.3499C7.75823 3.6 8.8999 2.45833 8.8999 1.05C9.83879 1.05 10.5999 1.81112 10.5999 2.75V12.1C10.5999 13.0389 9.83879 13.8 8.8999 13.8H2.0999C1.16102 13.8 0.399902 13.0389 0.399902 12.1V2.75ZM2.9499 6.15C2.48046 6.15 2.0999 6.53056 2.0999 7C2.0999 7.46944 2.48046 7.85 2.9499 7.85H2.9584C3.42784 7.85 3.8084 7.46944 3.8084 7C3.8084 6.53056 3.42784 6.15 2.9584 6.15H2.9499ZM5.4999 6.15C5.03046 6.15 4.6499 6.53056 4.6499 7C4.6499 7.46944 5.03046 7.85 5.4999 7.85H8.0499C8.51934 7.85 8.8999 7.46944 8.8999 7C8.8999 6.53056 8.51934 6.15 8.0499 6.15H5.4999ZM2.9499 9.55C2.48046 9.55 2.0999 9.93056 2.0999 10.4C2.0999 10.8694 2.48046 11.25 2.9499 11.25H2.9584C3.42784 11.25 3.8084 10.8694 3.8084 10.4C3.8084 9.93056 3.42784 9.55 2.9584 9.55H2.9499ZM5.4999 9.55C5.03046 9.55 4.6499 9.93056 4.6499 10.4C4.6499 10.8694 5.03046 11.25 5.4999 11.25H8.0499C8.51934 11.25 8.8999 10.8694 8.8999 10.4C8.8999 9.93056 8.51934 9.55 8.0499 9.55H5.4999Z"
+                                                                fill="#111827" />
+                                                        </svg>
+                                                        <span>PDF</span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -178,133 +246,161 @@
                                             <thead
                                                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                                 <tr>
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Payee
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Child
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#"><svg class="ml-1" width="10" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
                                                                 </svg></a>
                                                         </div>
                                                     </th>
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             3 Weeks
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             2 Weeks
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
 
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             1 Weeks
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
 
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Current
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
 
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Pending Amount
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
 
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Over Payment
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
 
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Pending Creditnote
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
 
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <div class="flex items-center">
                                                             Total Pending Amount
-                                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    class="ml-1 w-3 h-3" aria-hidden="true"
-                                                                    fill="currentColor" viewBox="0 0 320 512">
+                                                            <a href="#">
+                                                                <svg width="10" class="ml-1" height="10"
+                                                                    viewBox="0 0 10 10" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
                                                                     <path
-                                                                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z">
-                                                                    </path>
-                                                                </svg></a>
+                                                                        d="M2.5 7V1M2.5 1L0.5 3M2.5 1L4.5 3M7.5 3V9M7.5 9L9.5 7M7.5 9L5.5 7"
+                                                                        stroke="#232323" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </a>
                                                         </div>
                                                     </th>
-                                                    <th scope="col" class="py-3 px-6">
+                                                    <th scope="col" class="py-3 px-5">
                                                         <span class="sr-only">Edit</span>
                                                     </th>
                                                 </tr>
@@ -313,44 +409,10 @@
                                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                                     <td scope="row"
                                                         class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        John deo
+                                                        <span class="TextColor">John deo</span>
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        Berlin
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $4098.25
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $4098.25
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $4098.25
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $4098.25
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $4098.25
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $5361.84
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $5361.84
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        $5361.84
-                                                    </td>
-                                                </tr>
-
-                                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                                    <td scope="row"
-                                                        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        John deo
-                                                    </td>
-                                                    <td class="py-4 px-6">
-                                                        Berlin
+                                                        <span class="TextColor">Berlin</span>
                                                     </td>
                                                     <td class="py-4 px-6">
                                                         $4098.25
@@ -381,10 +443,44 @@
                                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                                     <td scope="row"
                                                         class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        John deo
+                                                        <span class="TextColor">John deo</span>
                                                     </td>
                                                     <td class="py-4 px-6">
-                                                        Berlin
+                                                        <span class="TextColor">Berlin</span>
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $4098.25
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        $5361.84
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                                    <td scope="row"
+                                                        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                        <span class="TextColor">John deo</span>
+                                                    </td>
+                                                    <td class="py-4 px-6">
+                                                        <span class="TextColor">Berlin</span>
                                                     </td>
                                                     <td class="py-4 px-6">
                                                         $4098.25
