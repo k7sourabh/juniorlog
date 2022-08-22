@@ -11,7 +11,7 @@ export class MainAccountComponent {
   constructor() { }
 
   //define the toogle property
-  isShow = false;
+  isShow = true;
 
   toggleDisplay() {
     this.isShow = !this.isShow;

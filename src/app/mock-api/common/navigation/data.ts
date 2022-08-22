@@ -12,7 +12,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
     {
         id: 'account',
         title: 'Finance & Account',
-        type: 'collapsable',
+        type: 'basic',
         icon: 'heroicons_outline:chart-pie',
         link: '/account'
     }

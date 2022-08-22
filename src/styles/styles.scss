@@ -31,3 +31,42 @@
     border-color: #009688;
     color: #009688;
 }
+
+.custombtn {
+    width: 90px;
+    height: 44px;
+    font-size: 14px;
+}
+
+.CustombgThead {
+    background: #EAECF7;
+}
+
+.top-b {
+    top: 230px;
+}
+
+.top-export {
+    top: 277px;
+}
+
+.ToggleBg {
+    background: #7A9DC2;
+}
+
+.ToggleBgCancle {
+    background: #EF4444;
+}
+
+.ExportBg {
+    background: #009688;
+}
+
+.beforeborder:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 70%;
+    width: 1px;
+    background: #ACCCD0;
+}
