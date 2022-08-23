@@ -30,6 +30,7 @@
 .page-active {
     border-color: #009688;
     color: #009688;
+    // background-color: #009688;
 }
 
 .custombtn {
@@ -69,4 +70,16 @@
     height: 70%;
     width: 1px;
     background: #ACCCD0;
+}
+.ngx-pagination {
+    .current{
+        background: transparent !important;
+        color: #009688 !important;
+    }
+    li{
+        a{
+            color: #A8ABAE !important;
+        }
+        
+    }
 }

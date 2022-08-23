@@ -1,0 +1,49 @@
+<div class="absolute right-0 top-b">
+    <button *ngIf="!showButton" (click)="showExport=true;showButton=true;" class="ToggleBg flex focus:outline-none h-12 hover:bg-gray-200 hover:text-white inline-flex items-center justify-center p-2.5
+        text-center text-gray-700 text-sm w-12bg-gray-200 border-gray-200 dark:border-gray-500
+        dark:focus:ring-gray-800 dark:hover:text-white dark:text-gray-500 flex focus:outline-none
+        focus:ring-4 focus:ring-gray-200 font-medium hover:bg-gray-200 hover:text-white inline-flex
+        items-center justify-center rounded-r-lg text-center text-gray-700 text-sm w-10">
+        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.550049 1.25C0.550049 0.780558 0.930607 0.4 1.40005 0.4H11.6C12.0695 0.4 12.45 0.780558 12.45 1.25C12.45 1.71944 12.0695 2.1 11.6 2.1H1.40005C0.930607 2.1 0.550049 1.71944 0.550049 1.25Z"
+                fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.550049 5.5C0.550049 5.03056 0.930607 4.65 1.40005 4.65H6.50005C6.96949 4.65 7.35005 5.03056 7.35005 5.5C7.35005 5.96944 6.96949 6.35 6.50005 6.35H1.40005C0.930607 6.35 0.550049 5.96944 0.550049 5.5Z"
+                fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.550049 9.75C0.550049 9.28056 0.930607 8.9 1.40005 8.9H11.6C12.0695 8.9 12.45 9.28056 12.45 9.75C12.45 10.2194 12.0695 10.6 11.6 10.6H1.40005C0.930607 10.6 0.550049 10.2194 0.550049 9.75Z"
+                fill="white" />
+        </svg>
+    </button>
+
+    <button *ngIf="showButton" (click)="showExport=false;showButton=false;" class="ToggleBgCancle flex focus:outline-none h-12 hover:bg-red-200 hover:text-white inline-flex items-center justify-center p-2.5
+        text-center text-red-700 text-sm w-12bg-red-200 border-red-200 dark:border-red-500
+        dark:focus:ring-red-800 dark:hover:text-white dark:text-red-500 flex focus:outline-none
+        focus:ring-4 focus:ring-red-200 font-medium hover:bg-red-200 hover:text-white inline-flex
+        items-center justify-center rounded-r-lg text-center text-red-700 text-sm w-10">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.648984 0.648961C0.980929 0.317015 1.51912 0.317015 1.85107 0.648961L5.50002 4.29792L9.14898 0.648961C9.48093 0.317015 10.0191 0.317015 10.3511 0.648961C10.683 0.980906 10.683 1.5191 10.3511 1.85104L6.70211 5.5L10.3511 9.14896C10.683 9.48091 10.683 10.0191 10.3511 10.351C10.0191 10.683 9.48093 10.683 9.14898 10.351L5.50002 6.70208L1.85107 10.351C1.51912 10.683 0.980929 10.683 0.648984 10.351C0.317038 10.0191 0.317038 9.48091 0.648984 9.14896L4.29794 5.5L0.648984 1.85104C0.317038 1.5191 0.317038 0.980906 0.648984 0.648961Z"
+                fill="white" />
+        </svg>
+    </button>
+</div>
+
+<div *ngIf="showExport" class="absolute right-0 top-export">
+    <button class="ExportBg flex focus:outline-none h-10 hover:bg-gray-200 hover:text-white inline-flex items-center justify-center p-2.5 mt-4
+        text-center text-gray-700 text-sm w-12bg-gray-200 border-gray-200 dark:border-gray-500
+        dark:focus:ring-gray-800 dark:hover:text-white dark:text-gray-500 flex focus:outline-none
+        focus:ring-4 focus:ring-gray-200 font-medium hover:bg-gray-200 hover:text-white inline-flex
+        items-center justify-center text-center text-gray-700 text-sm w-10">
+        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M11.7671 5.10001H9.50908V6.59576H11.7671C12.4385 6.59576 12.9594 6.97865 12.9594 7.30837V13.9413C12.9594 14.2707 12.4385 14.6539 11.7671 14.6539L3.23237 14.6536C2.56098 14.6536 2.04002 14.2707 2.04002 13.941L2.0398 7.30875C2.0398 6.97929 2.56073 6.59614 3.23216 6.59614H5.48994V5.10038H3.23238C1.81249 5.10038 0.700012 6.07041 0.700012 7.30875V13.9416C0.700012 15.1802 1.81222 16.15 3.23238 16.15H11.7676C13.1873 16.15 14.3 15.18 14.3 13.9416L14.2998 7.30875C14.2996 6.07016 13.1874 5.1002 11.7673 5.1002L11.7671 5.10001Z"
+                fill="white" />
+            <path
+                d="M5.50803 4.18372C5.67919 4.18372 5.85012 4.11845 5.98087 3.98771L6.81807 3.15051V7.39156L6.81785 9.9535C6.81785 10.3228 7.11716 10.6221 7.48648 10.6221C7.85581 10.6221 8.15511 10.3228 8.15511 9.9535V3.10509L9.03746 3.98743C9.16799 4.11796 9.33914 4.18344 9.5103 4.18344C9.68123 4.18344 9.85239 4.11818 9.98314 3.98743C10.2444 3.72637 10.2444 3.30303 9.98314 3.04196L7.98676 1.04558C7.85623 0.915055 7.68529 0.850006 7.51435 0.850006H7.50916H7.50398C7.33304 0.850006 7.1621 0.914839 7.03157 1.04558L5.03519 3.04196C4.77392 3.30302 4.77392 3.72636 5.03519 3.98743C5.16572 4.11818 5.33665 4.18344 5.50803 4.18344V4.18372Z"
+                fill="white" />
+        </svg>
+    </button>
+
+</div>
